@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Volkhov:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Volkhov:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&family=Volkhov:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --black: #212832;
+  --red: #df6951;
+  --navy-blue: #181e4b;
+  --para: #5e6282;
+  --yellow: #f1a501;
+}
+ul li {
+  list-style: none;
+}
+header {
+    padding-top: 12px;
+}
+/* Navigation Bar */
+.navigationBar {
+  margin: 25px;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+  gap: 35px;
+}
+.navLinks li a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--black);
+  font-family: Google Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.transparent-btn {
+  border-radius: 5px;
+  border: 1px solid var(--1st, #212832);
+  padding: 8px 12px;
+}
+
+/* Banner section */
+.banner-section {
+  margin: 25px 0px;
+  position: relative;
+}
+.banner-section::after {
+    content: "";
+    position: absolute;
+    background: url(../img/Decore.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    top: -90px;
+    background-position-x: 675px;
+    background-position-y: -80px;
+    margin: -40px 0px;
+}
+.bannerLeftImg img {
+  width: 100%;
+}
+.sub-heading {
+  color: var(--red);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.banner-right h1 {
+  color: var(--navy-blue);
+  font-family: Volkhov;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 89px; /* 105.952% */
+  letter-spacing: -3.36px;
+  padding: 20px 0px;
+}
+.banner-right p {
+  color: var(--para);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.banner-btn {
+  border-radius: 10px;
+  background: var(--yellow);
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+  text-decoration: none;
+  padding: 16px 25px;
+  color: #fff;
+}
+.banner-btns {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+}
+.banner-btn-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 190px;
+  gap: 15px;
+}
+.banner-btn-second a {
+  color: var(--text-color, #686d77);
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+@media (max-width:1200px) {
+    .navLinks {
+        gap: 20px;
+    }
+    .banner-section {
+        margin: 40px 0px;
+    }
+    .sub-heading {
+        font-size: 13px;
+    }
+    .banner-right h1 {
+        font-size: 35px;
+        line-height: 45px;
+        letter-spacing: 0px;
+        padding: 10px 0px;
+    }
+    .banner-right p {
+        font-size: 14px;
+        line-height: 25px;
+        padding-bottom: 15px;
+    }
+    .banner-btns {
+        gap: 15px;
+    }
+    .banner-btn {
+        padding: 12px 10px;
+        color: #fff;
+        font-size: 15px;
+    }
+    .banner-btn-second {
+        gap: 8px;
+    }
+    .banner-btn-second img {
+        width: 90%;
+    }
+    .banner-btn-second a {
+        font-size: 15px;
+    }
+    .banner-section::after {
+        top: -110px;
+        background-position-x: 375px;
+        background-position-y: -85px;
+        margin: 0px 0px;
+        padding-bottom: 407px;
+    }
+}
+
+@media (max-width:767px) {
+    .banner-right h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 7px 0px;
+    }
+    .banner-right p {
+        font-size: 13px;
+        line-height: 23px;
+        padding-bottom: 7px;
+    }
+    .banner-btns {
+        gap: 50px;
+        justify-content: center;
+    }
+}
